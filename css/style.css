@@ -328,6 +328,29 @@ body .fw7 {
   display: flex;
 }
 
+.closes {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: 1px solid var(--text);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: var(--text);
+  opacity: 1;
+  visibility: visible;
+}
+
+.closes:hover {
+  -webkit-filter: var(--ic-bh);
+          filter: var(--ic-bh);
+}
+
+.closes.is-showing {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .closest {
   width: 2.5rem;
   height: 2.5rem;
