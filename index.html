@@ -6,12 +6,12 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231112233559">
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js?_v=20231112233559"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20231113223235">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js?_v=20231113223235"></script>
 	<link rel="shortcut icon" href="">
-	<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css?_v=20231112233559' rel='stylesheet'>
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css?_v=20231113223235' rel='stylesheet'>
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css?_v=20231112233559" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css?_v=20231113223235" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -23,8 +23,8 @@
 
 			<header class="headercab">
 				<div class="headercab__container">
-					<div class="headercab__menu menucab">
-						<button class="closes is-showing"><span class="bars"></span></button>
+					<div class="headercab__menu menucab" data-da=".header__dinamic, 600">
+						<button class="closes is-showing menu-active"><span class="bars menu-active"></span></button>
 						<div class="outsides in">
 							<div class="inside">
 								<ul class="menu-pl">
@@ -63,89 +63,93 @@
 							</div>
 						</div>
 					</div>
-
-
-					<div class="header__disain-btns">
-						<div class="btn fw7"><a href="#">Просмотр рекламы</a></div>
-						<div class="btn fw7"><a href="#">Заработок</a></div>
-						<div class="btn fw7"><a href="#"> Краудфандинг</a></div>
+					<div class="header__dinamic">
 
 					</div>
-					<div class="header__balance-block">
-						<div class="header__balance-text">
-							Баланс:
+					<div class="headercab__dopblockbody">
+						<div class="header__disain-btns">
+							<div class="btn fw7"><a href="#">Просмотр рекламы</a></div>
+							<div class="btn fw7"><a href="#">Заработок</a></div>
+							<div class="btn fw7"><a href="#"> Краудфандинг</a></div>
+
 						</div>
-						<div class="header__balance-r fw7">
-							0 ₽
-						</div>
-					</div>
-					<div class="headercab__block ">
-
-						<div class="spollers">
-							<div class="spollers__item menu-activea">
-								<a href="#" class="spollers__block">
-									<div class="spolllers__img">
-										<picture><source srcset="img/crowdfunding/user.webp" type="image/webp"><img class="spolllers__img" src="img/crowdfunding/user.png" alt=""></picture>
-									</div>
-									<div class="spollers__text">
-										ivanov
-									</div>
-								</a>
-								<button type="button" class="spollers__title _icon-arrow">
-
-								</button>
-								<div class="spollers__body body-spollers">
-									<a href="" class="body-spollers__btn">
-										<div>
-											Создать проект
-										</div>
-										<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-											<path d="M13.5063 8.87549H8.50635V13.8755C8.50635 14.1407 8.40099 14.3951 8.21345 14.5826C8.02592 14.7701 7.77156 14.8755 7.50635 14.8755C7.24113 14.8755 6.98678 14.7701 6.79924 14.5826C6.6117 14.3951 6.50635 14.1407 6.50635 13.8755V8.87549H1.50635C1.24113 8.87549 0.986777 8.77013 0.799241 8.58259C0.611705 8.39506 0.506348 8.1407 0.506348 7.87549C0.506348 7.61027 0.611705 7.35592 0.799241 7.16838C0.986777 6.98085 1.24113 6.87549 1.50635 6.87549H6.50635V1.87549C6.50635 1.61027 6.6117 1.35592 6.79924 1.16838C6.98678 0.980845 7.24113 0.875488 7.50635 0.875488C7.77156 0.875488 8.02592 0.980845 8.21345 1.16838C8.40099 1.35592 8.50635 1.61027 8.50635 1.87549V6.87549H13.5063C13.7716 6.87549 14.0259 6.98085 14.2135 7.16838C14.401 7.35592 14.5063 7.61027 14.5063 7.87549C14.5063 8.1407 14.401 8.39506 14.2135 8.58259C14.0259 8.77013 13.7716 8.87549 13.5063 8.87549Z" fill="#042257" />
-										</svg>
-									</a>
-									<div class="body-spollers__menu">
-										<a href="#" class="body-spollers__link _icon-project">
-
-											Созданные проекты
-
-										</a>
-										<a href="#" class="body-spollers__link _icon-chek">
-
-
-											Поддержанные проекты
-
-										</a>
-										<a href="#" class="body-spollers__link _icon-rb">
-
-
-											Баланс
-
-											<div class="body-spollers__doptext fw7">
-												0 ₽
-											</div>
-										</a>
-
-									</div>
-									<div class="body-spollers__site">
-										<a href="#" class="body-spollers__site-link _icon-lk">
-
-
-											Личный кабинет
-
-										</a>
-										<a href="#" class="body-spollers__site-link _icon-exit">
-
-											Выход
-
-										</a>
-									</div>
-								</div>
-
+						<div class="header__balance-block da" data-da=".header__dinamic, 600">
+							<div class="header__balance-text">
+								Баланс:
+							</div>
+							<div class="header__balance-r fw7">
+								0 ₽
 							</div>
 						</div>
+						<div class="headercab__block ">
+
+							<div class="spollers">
+								<div class="spollers__item menu-activea">
+									<a href="#" class="spollers__block">
+										<div class="spolllers__img">
+											<picture><source srcset="img/crowdfunding/user.webp" type="image/webp"><img class="spolllers__img" src="img/crowdfunding/user.png" alt=""></picture>
+										</div>
+										<div class="spollers__text">
+											ivanov
+										</div>
+									</a>
+									<button type="button" class="spollers__title _icon-arrow">
+
+									</button>
+									<div class="spollers__body body-spollers">
+										<a href="" class="body-spollers__btn">
+											<div>
+												Создать проект
+											</div>
+											<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+												<path d="M13.5063 8.87549H8.50635V13.8755C8.50635 14.1407 8.40099 14.3951 8.21345 14.5826C8.02592 14.7701 7.77156 14.8755 7.50635 14.8755C7.24113 14.8755 6.98678 14.7701 6.79924 14.5826C6.6117 14.3951 6.50635 14.1407 6.50635 13.8755V8.87549H1.50635C1.24113 8.87549 0.986777 8.77013 0.799241 8.58259C0.611705 8.39506 0.506348 8.1407 0.506348 7.87549C0.506348 7.61027 0.611705 7.35592 0.799241 7.16838C0.986777 6.98085 1.24113 6.87549 1.50635 6.87549H6.50635V1.87549C6.50635 1.61027 6.6117 1.35592 6.79924 1.16838C6.98678 0.980845 7.24113 0.875488 7.50635 0.875488C7.77156 0.875488 8.02592 0.980845 8.21345 1.16838C8.40099 1.35592 8.50635 1.61027 8.50635 1.87549V6.87549H13.5063C13.7716 6.87549 14.0259 6.98085 14.2135 7.16838C14.401 7.35592 14.5063 7.61027 14.5063 7.87549C14.5063 8.1407 14.401 8.39506 14.2135 8.58259C14.0259 8.77013 13.7716 8.87549 13.5063 8.87549Z" fill="#042257" />
+											</svg>
+										</a>
+										<div class="body-spollers__menu">
+											<a href="#" class="body-spollers__link _icon-project">
+
+												Созданные проекты
+
+											</a>
+											<a href="#" class="body-spollers__link _icon-chek">
 
 
+												Поддержанные проекты
+
+											</a>
+											<a href="#" class="body-spollers__link _icon-rb">
+
+
+												Баланс
+
+												<div class="body-spollers__doptext fw7">
+													0 ₽
+												</div>
+											</a>
+
+										</div>
+										<div class="body-spollers__site">
+											<a href="#" class="body-spollers__site-link _icon-lk">
+
+
+												Личный кабинет
+
+											</a>
+											<a href="#" class="body-spollers__site-link _icon-exit">
+
+												Выход
+
+											</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
 					</div>
+
 
 				</div>
 
@@ -497,7 +501,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20231112233559"></script>
+	<script src="js/app.min.js?_v=20231113223235"></script>
 
 </body>
 

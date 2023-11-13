@@ -3492,12 +3492,20 @@
     }));
     document.querySelector(".closes").addEventListener("click", (function() {
         document.querySelector(".outsides").classList.toggle("in");
-        document.querySelector(".bars").classList.toggle("actives");
+        document.querySelector(".bars").classList.toggle("menu-active");
         this.classList.toggle("is-showing");
+        var secondMenu = document.querySelector(".menu-activea.menu-active");
+        if (secondMenu) {
+            secondMenu.classList.remove("menu-active");
+            document.querySelector(".menu__main-gl").classList.remove("menu-active");
+            document.querySelector(".body-spollers").classList.remove("menu-active");
+            document.querySelector(".spollers__title").classList.remove("menu-active");
+            document.querySelector(".bars").classList.remove("menu-active");
+        }
     }));
     document.querySelector(".closest").addEventListener("click", (function() {
         document.querySelector(".outsides").classList.remove("in");
-        document.querySelector(".bars").classList.remove("actives");
+        document.querySelector(".bars").classList.remove("menu-active");
         document.querySelector(".closes").classList.remove("is-showing");
     }));
     (function() {
@@ -3506,13 +3514,22 @@
         var maingl = document.querySelector(".menu__main-gl");
         var h1 = document.querySelector(".spollers__title");
         var bodyspo = document.querySelector(".body-spollers");
+        var bars = document.querySelector(".bars");
         var open = false;
         menugl.addEventListener("click", (function() {
+            var firstMenu = document.querySelector(".closes.is-showing");
+            if (firstMenu) {
+                document.querySelector(".outsides").classList.remove("in");
+                document.querySelector(".bars").classList.remove("menu-active");
+                document.querySelector(".closes").classList.remove("is-showing");
+            }
             open = !open ? true : false;
             navgl.classList.toggle("menu-active");
             maingl.classList.toggle("menu-active");
             bodyspo.classList.toggle("menu-active");
             h1.classList.toggle("menu-active");
+            bars.classList.toggle("menu-active");
+            bars.classList.remove("menu-hover");
             h1.classList.remove("menu-hover");
             bodyspo.classList.remove("menu-hover");
             navgl.classList.remove("menu-hover");
